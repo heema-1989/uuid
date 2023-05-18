@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+  <title>Register User Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- load bulma css -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- load fontawesome -->
+  <style>
+    body        { padding-top:70px; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="jumbotron text-center text-success">
+    <h1><span class="fa fa-lock"></span> Welcome! Please register yourself here</h1>
+    <div class="container">
+      <form method="POST" action="/welcome" >
+        <label for="name">Name: </label>
+        <input type="text" name="name"  id="name" value="{{.Name}}"><br>
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email"  value="{{.Email}}"><br>
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username"  value="{{.Username}}"><br>
+        <label for="pwd">Password: </label>
+        <input type="password" name="password" id="pwd" value="{{.Password}}"><br>
+        <input type="submit" value="Register">
+      </form>
+      <br><br>
+      <span>This email id already exists. Please enter new email</span>
+    </div>
+  </div>
+</div>
+</body>
+</html>

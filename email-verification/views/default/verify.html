@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> <!-- load bulma css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <style>
+        body        { padding-top:70px; }
+    </style>
+</head>
+<body>
+<div class="jumbotron text-center text-success">
+    <!--<h1><span class="fa fa-home"></span> Welcome {{.Name}}. You have successfully registered yourself with {{.Email}}</h1>-->
+    <h1><span class="fa fa-home"></span> Thanks for signing up. We have sent the verification email to your registered email id {{.Email}}.</h1>
+    <h1><span>Please complete your registration by verifying your email.</span></h1>
+</div>
+</body>
+</html>
